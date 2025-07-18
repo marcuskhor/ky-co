@@ -12,6 +12,7 @@ import {
   CheckCircle,
   ArrowRight 
 } from "lucide-react";
+import auditingHero from "@/assets/auditing-hero.jpg";
 
 const Services = () => {
   const services = [
@@ -88,15 +89,78 @@ const Services = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-hero text-primary-foreground py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Professional Services
-          </h1>
-          <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto mb-8">
-            Comprehensive audit and advisory services tailored to meet your business needs. 
-            We deliver excellence through expertise, integrity, and innovation.
-          </p>
+      <section className="relative py-32 lg:py-48 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${auditingHero})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-hero opacity-85"></div>
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white leading-tight">
+                Professional 
+                <span className="text-accent block"> Audit Services</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed max-w-2xl">
+                Comprehensive audit and advisory services tailored to meet your business needs. 
+                We deliver excellence through expertise, integrity, and innovation.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+                <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+                  Get Free Consultation
+                  <ArrowRight className="ml-2 h-6 w-6" />
+                </Button>
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4">
+                  Download Brochure
+                </Button>
+              </div>
+            </div>
+            
+            {/* Key Stats Overlay */}
+            <div className="hidden lg:block">
+              <div className="bg-white/15 backdrop-blur-md p-8 rounded-2xl shadow-elegant border border-white/20">
+                <h3 className="text-2xl font-bold text-white mb-8 text-center">Our Track Record</h3>
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-accent mb-2">500+</div>
+                    <div className="text-white/90 text-sm">Audits Completed</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-accent mb-2">15+</div>
+                    <div className="text-white/90 text-sm">Years Experience</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-accent mb-2">98%</div>
+                    <div className="text-white/90 text-sm">Success Rate</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-accent mb-2">24/7</div>
+                    <div className="text-white/90 text-sm">Support</div>
+                  </div>
+                </div>
+                
+                {/* Trust Indicators */}
+                <div className="mt-8 pt-6 border-t border-white/20">
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
+                      <span className="text-white/90 text-sm">Certified Public Accountants</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
+                      <span className="text-white/90 text-sm">ISO 9001:2015 Certified</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
+                      <span className="text-white/90 text-sm">Licensed by Bank Negara Malaysia</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
