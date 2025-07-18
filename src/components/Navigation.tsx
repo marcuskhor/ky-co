@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import ky_logo from "@/assets/ky_co_logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,11 +21,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-gradient-primary p-2 rounded-lg">
-              <span className="text-primary-foreground font-bold text-lg">KY</span>
-            </div>
-            <span className="text-2xl font-bold text-primary">KY&CO</span>
+          <Link to="/" className="flex items-center space-x-2 min-w-0 flex-shrink-0 ">
+            <img 
+              src={ky_logo} 
+              alt="KY&CO" 
+              className="h-20 w-20 sm:h-16 sm:w-48 text-primary flex-shrink-0"
+            />
           </Link>
 
           {/* Desktop Navigation */}
