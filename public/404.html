@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
+      var pathToConvert = window.location.pathname.slice(1).split('/').slice(1).join('/');
+      if (pathToConvert) {
+        window.location.replace(
+          window.location.protocol + '//' + window.location.hostname + 
+          (window.location.port ? ':' + window.location.port : '') + 
+          window.location.pathname.split('/')[1] ? '/' + window.location.pathname.split('/')[1] : '' +
+          '/?/' + pathToConvert +
+          (window.location.search ? '&' + window.location.search.slice(1).replace(/&/g, '~and~') : '') +
+          window.location.hash
+        );
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
