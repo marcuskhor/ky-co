@@ -71,7 +71,7 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      <section className="relative py-32 lg:py-48 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroBg})` }}
@@ -81,7 +81,7 @@ const Index = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
                 Excellence in 
                 <span className="text-accent"> Audit</span> & 
                 <span className="text-accent"> Advisory</span>
