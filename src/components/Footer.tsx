@@ -15,23 +15,29 @@ const Footer = () => {
               <span className="text-2xl font-bold">KY&CO</span>
             </div>
             <p className="text-primary-foreground/80 mb-6 max-w-md">
-              A leading audit and assurance firm committed to delivering exceptional 
-              professional services with integrity, excellence, and innovation.
+              A licensed audit firm committed to providing reliable, ethical, and practical 
+              accounting services since 2021.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
                 <span className="text-sm">
-                  Level 12, Menara ABC, Jalan Bukit Bintang, 50200 Kuala Lumpur
+                  Klang: No.25-2, Lorong Gopeng, 41400, Klang, Selangor
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="h-4 w-4" />
+                <span className="text-sm">
+                  KL: Suite 28.02, Level 28, Menara Southpoint, Mid Valley City
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">+60 3-2123 4567</span>
+                <span className="text-sm">012-731 2618</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">info@kyco.my</span>
+                <span className="text-sm">ad.kyco@hotmail.com</span>
               </div>
             </div>
           </div>
@@ -65,12 +71,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a 
-                  href="#contact" 
+                <Link 
+                  to="/contact" 
                   className="text-primary-foreground/80 hover:text-white transition-colors duration-300"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -81,27 +87,27 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <span className="text-primary-foreground/80 text-sm">
-                  External Audit
+                  Company Audits
                 </span>
               </li>
               <li>
                 <span className="text-primary-foreground/80 text-sm">
-                  Internal Audit
+                  Group & Consolidated Audits
                 </span>
               </li>
               <li>
                 <span className="text-primary-foreground/80 text-sm">
-                  Tax Advisory
+                  Compliance Audits (MFRS/MPERS)
                 </span>
               </li>
               <li>
                 <span className="text-primary-foreground/80 text-sm">
-                  Business Consulting
+                  Technical Consultations
                 </span>
               </li>
               <li>
                 <span className="text-primary-foreground/80 text-sm">
-                  Risk Management
+                  Advisory Services
                 </span>
               </li>
             </ul>

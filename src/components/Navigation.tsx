@@ -14,6 +14,7 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
     { name: "About Us", path: "/about" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -49,11 +50,11 @@ const Navigation = () => {
             <div className="flex items-center space-x-4 text-sm text-muted-foreground">
               <div className="flex items-center space-x-1">
                 <Phone className="h-4 w-4" />
-                <span>+60 3-2123 4567</span>
+                <span>012-731 2618</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Mail className="h-4 w-4" />
-                <span>info@kyco.my</span>
+                <span>ad.kyco@hotmail.com</span>
               </div>
             </div>
 
@@ -100,11 +101,11 @@ const Navigation = () => {
                 <div className="flex flex-col space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4" />
-                    <span>+60 3-2123 4567</span>
+                    <span>012-731 2618</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Mail className="h-4 w-4" />
-                    <span>info@kyco.my</span>
+                    <span>ad.kyco@hotmail.com</span>
                   </div>
                 </div>
                 <Button variant="default" size="sm" className="w-full mt-3">

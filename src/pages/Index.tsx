@@ -22,25 +22,25 @@ const Index = () => {
     {
       icon: Shield,
       title: "External Audit",
-      description: "Independent audit services ensuring compliance with accounting standards and regulations.",
+      description: "Audit of companies in property development, construction, manufacturing, trading, and various service industries.",
       link: "/services"
     },
     {
       icon: FileText,
-      title: "Internal Audit",
-      description: "Comprehensive internal audit services to strengthen governance and risk management.",
+      title: "Group & Consolidated Audits",
+      description: "Group and consolidated financial statement audits with comprehensive reporting.",
       link: "/services"
     },
     {
       icon: Calculator,
-      title: "Tax Advisory",
-      description: "Strategic tax planning and advisory services to optimize your tax position.",
+      title: "Compliance Audits",
+      description: "Compliance audits in accordance with MFRS, MPERS, and other applicable standards.",
       link: "/services"
     },
     {
       icon: Users,
-      title: "Business Consulting",
-      description: "Expert consulting to help navigate challenges and identify growth opportunities.",
+      title: "Technical Consultations",
+      description: "Technical consultations on financial reporting and accounting treatments.",
       link: "/services"
     }
   ];
@@ -80,25 +80,25 @@ const Index = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
+            <div className="text-white text-center lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                Excellence in 
-                <span className="text-accent"> Audit</span> & 
-                <span className="text-accent"> Advisory</span>
+                Welcome to 
+                <span className="text-accent block">KY&CO</span>
               </h1>
-              <p className="text-xl text-white/80 mb-8 leading-relaxed">
-                KY&CO is your trusted partner for comprehensive audit, tax, and business advisory services. 
-                With over 15 years of experience, we deliver exceptional results that drive your business forward.
+              <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+                Established since 2021, KY&CO is a licensed audit firm committed to providing reliable, 
+                ethical, and practical accounting services that help businesses meet regulatory requirements 
+                and achieve sustainable growth.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button variant="hero" size="lg" asChild>
                   <Link to="/services">
                     Our Services
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
-                  Get Free Consultation
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary" asChild>
+                  <Link to="/contact">Get Free Consultation</Link>
                 </Button>
               </div>
             </div>
@@ -108,19 +108,19 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                    <span className="text-white/90">15+ Years of Industry Experience</span>
+                    <span className="text-white/90">Committed to building trust and ensuring transparency</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                    <span className="text-white/90">500+ Satisfied Clients</span>
+                    <span className="text-white/90">Experienced in a wide range of industries</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                    <span className="text-white/90">Certified Professional Team</span>
+                    <span className="text-white/90">Personalised and responsive service</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                    <span className="text-white/90">99% Client Retention Rate</span>
+                    <span className="text-white/90">Strong technical capabilities</span>
                   </div>
                 </div>
               </div>
@@ -129,15 +129,65 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Preview */}
+      {/* Mission & Commitment */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Our Mission
+              </h2>
+              <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+                We aim to support businesses in building a strong financial foundation through reliable, 
+                ethical, and practical accounting services. Our goal is to help clients stay compliant 
+                with financial regulations while enabling sustainable growth.
+              </p>
+              <Button variant="default" size="lg" asChild>
+                <Link to="/about">
+                  Learn More About Us
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Our Commitment
+              </h2>
+              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                At the heart of our firm is a team of dedicated and experienced professionals who value:
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span>Integrity in every engagement</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span>Reliability in our audit execution</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span>Responsiveness to client needs</span>
+                </div>
+              </div>
+              <p className="text-muted-foreground mt-6 leading-relaxed">
+                We take the time to understand each client's business, ensuring that our advice is 
+                relevant, practical, and aligned with your goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="py-20 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Professional Services
+              Our Services
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Comprehensive audit and advisory solutions tailored to your business needs
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              We offer a wide range of audit and assurance services tailored to meet the needs of SMEs and growing businesses, including:
             </p>
           </div>
 
@@ -167,6 +217,10 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">
+              Our team combines regulatory knowledge with industry-specific insights to help you make 
+              informed financial decisions and stay compliant.
+            </p>
             <Button variant="default" size="lg" asChild>
               <Link to="/services">
                 View All Services
