@@ -18,68 +18,58 @@ const Services = () => {
   const services = [
     {
       icon: Shield,
-      title: "External Audit",
-      description: "Independent audit services ensuring compliance with accounting standards and regulatory requirements.",
+      title: "Audit of Companies",
+      description: "Comprehensive audit services for companies across various industries including property development, construction, manufacturing, trading, and service sectors.",
       features: [
-        "Statutory audits for companies",
-        "Financial statement audits", 
-        "Compliance auditing",
-        "Internal control evaluation"
+        "Property development audits",
+        "Construction company audits", 
+        "Manufacturing sector audits",
+        "Trading business audits",
+        "Service industry audits"
       ]
     },
     {
       icon: FileText,
-      title: "Internal Audit",
-      description: "Comprehensive internal audit services to strengthen your organization's governance and risk management.",
+      title: "Group & Consolidated Financial Statement Audits",
+      description: "Specialized audit services for group companies and consolidated financial statements to ensure compliance and accuracy.",
       features: [
-        "Risk assessment and management",
-        "Process improvement",
-        "Internal control review",
-        "Operational auditing"
+        "Multi-entity group audits",
+        "Consolidated reporting",
+        "Inter-company eliminations",
+        "Group accounting policies"
       ]
     },
     {
       icon: Calculator,
-      title: "Tax Advisory",
-      description: "Strategic tax planning and advisory services to optimize your tax position while ensuring compliance.",
+      title: "Compliance Audits",
+      description: "Ensure your business meets all regulatory requirements with our compliance audit services in accordance with MFRS, MPERS, and other applicable standards.",
       features: [
-        "Corporate tax planning",
-        "Personal tax advisory",
-        "Tax compliance services",
-        "International tax planning"
+        "MFRS compliance audits",
+        "MPERS standard audits",
+        "Regulatory compliance checks",
+        "Standards adherence verification"
       ]
     },
     {
       icon: Users,
-      title: "Business Consulting",
-      description: "Expert business consulting to help you navigate challenges and identify growth opportunities.",
+      title: "Technical Consultations",
+      description: "Expert technical consultations on financial reporting and accounting treatments to help you navigate complex accounting issues.",
       features: [
-        "Strategic planning",
-        "Financial restructuring",
-        "Merger & acquisition support",
-        "Business process optimization"
+        "Financial reporting guidance",
+        "Accounting treatment advice",
+        "Complex transaction structuring",
+        "Implementation support"
       ]
     },
     {
       icon: TrendingUp,
-      title: "Risk Management",
-      description: "Comprehensive risk management solutions to protect and enhance your business value.",
+      title: "Advisory on Accounting Standards",
+      description: "Stay ahead with our advisory services on the latest developments in accounting standards and their impact on your business.",
       features: [
-        "Enterprise risk management",
-        "Regulatory compliance",
-        "Financial risk assessment",
-        "Operational risk review"
-      ]
-    },
-    {
-      icon: Award,
-      title: "Assurance Services",
-      description: "Professional assurance services to enhance stakeholder confidence in your financial information.",
-      features: [
-        "Financial statement review",
-        "Agreed-upon procedures",
-        "Compilation services",
-        "Due diligence support"
+        "New standards implementation",
+        "Impact assessments",
+        "Transition planning",
+        "Ongoing compliance monitoring"
       ]
     }
   ];
@@ -218,26 +208,44 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-gradient-primary p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Award className="h-8 w-8 text-primary-foreground" />
+                <Shield className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Expertise</h3>
+              <h3 className="text-xl font-semibold mb-3">Trust & Transparency</h3>
               <p className="text-muted-foreground">
-                Our team of certified professionals brings decades of combined experience 
-                across various industries and sectors.
+                Committed to building trust and ensuring transparency in every engagement with our clients.
               </p>
             </div>
 
             <div className="text-center">
               <div className="bg-gradient-primary p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Shield className="h-8 w-8 text-primary-foreground" />
+                <Award className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Integrity</h3>
+              <h3 className="text-xl font-semibold mb-3">Industry Experience</h3>
               <p className="text-muted-foreground">
-                We maintain the highest ethical standards and provide transparent, 
-                honest advice that you can trust.
+                Experienced in a wide range of industries, with a strong focus on SMEs and growing businesses.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-gradient-primary p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <Users className="h-8 w-8 text-primary-foreground" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Personalised Service</h3>
+              <p className="text-muted-foreground">
+                Personalised and responsive service tailored to your specific business needs and goals.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-gradient-primary p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <CheckCircle className="h-8 w-8 text-primary-foreground" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Technical Capabilities</h3>
+              <p className="text-muted-foreground">
+                Strong technical capabilities in MFRS, MPERS, and consolidation audits with deep expertise.
               </p>
             </div>
 
@@ -245,10 +253,9 @@ const Services = () => {
               <div className="bg-gradient-primary p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <TrendingUp className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Innovation</h3>
+              <h3 className="text-xl font-semibold mb-3">Dependable Partnership</h3>
               <p className="text-muted-foreground">
-                We leverage the latest technology and methodologies to deliver 
-                efficient and effective solutions.
+                A dependable partner to navigate today's dynamic financial landscape with confidence.
               </p>
             </div>
           </div>
