@@ -164,36 +164,74 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
-                <CardHeader>
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="bg-gradient-primary p-3 rounded-lg">
-                      <service.icon className="h-6 w-6 text-primary-foreground" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            {/* First 3 services */}
+            <div className="col-span-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
+              {services.slice(0, 3).map((service, index) => (
+                <Card key={index} className="shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 w-full max-w-sm">
+                  <CardHeader>
+                    <div className="flex items-center space-x-3 mb-3">
+                      <div className="bg-gradient-primary p-3 rounded-lg">
+                        <service.icon className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
                     </div>
-                    <CardTitle className="text-xl">{service.title}</CardTitle>
-                  </div>
-                  <CardDescription className="text-muted-foreground">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center space-x-2">
-                        <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                        <span className="text-sm text-muted-foreground">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button variant="outline" className="w-full mt-6 group">
-                    Learn More
-                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+                    <CardDescription className="text-muted-foreground">
+                      {service.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {service.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-center space-x-2">
+                          <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                          <span className="text-sm text-muted-foreground">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <Button variant="outline" className="w-full mt-6 group">
+                      Learn More
+                      <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            
+            {/* Last 2 services centered */}
+            <div className="col-span-full flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl">
+                {services.slice(3).map((service, index) => (
+                  <Card key={index + 3} className="shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 w-full max-w-sm">
+                    <CardHeader>
+                      <div className="flex items-center space-x-3 mb-3">
+                        <div className="bg-gradient-primary p-3 rounded-lg">
+                          <service.icon className="h-6 w-6 text-primary-foreground" />
+                        </div>
+                        <CardTitle className="text-xl">{service.title}</CardTitle>
+                      </div>
+                      <CardDescription className="text-muted-foreground">
+                        {service.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2">
+                        {service.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className="flex items-center space-x-2">
+                            <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                            <span className="text-sm text-muted-foreground">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <Button variant="outline" className="w-full mt-6 group">
+                        Learn More
+                        <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -208,7 +246,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-items-center">
             <div className="text-center">
               <div className="bg-gradient-primary p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <Shield className="h-8 w-8 text-primary-foreground" />
