@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import contactHero from "@/assets/contact-hero.jpg";
 
 const Contact = () => {
   return (
@@ -13,12 +14,18 @@ const Contact = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-32 lg:py-48 bg-gradient-primary text-primary-foreground">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-8">
+      <section className="relative py-32 lg:py-48 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${contactHero})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-hero opacity-85"></div>
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white">
             Contact Us
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
             Get in touch with our team of professionals. We're here to help you with your audit and advisory needs.
           </p>
         </div>
