@@ -105,22 +105,37 @@ const About = () => {
                 understanding of local compliance requirements to serve our clients effectively.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">2021</div>
-                <div className="text-muted-foreground">Established</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">100+</div>
-                <div className="text-muted-foreground">Clients Served</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">10+</div>
-                <div className="text-muted-foreground">Team Members</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">99%</div>
-                <div className="text-muted-foreground">Client Satisfaction</div>
+            <div className="bg-secondary p-8 rounded-lg">
+              <h3 className="text-2xl font-bold text-foreground mb-6">Our Mission</h3>
+              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                To support businesses in building a strong financial foundation through reliable, 
+                ethical, and practical accounting services.
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Client-Centric Approach</h4>
+                    <p className="text-muted-foreground text-sm">We take time to understand each client's unique business needs</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Technical Excellence</h4>
+                    <p className="text-muted-foreground text-sm">Deep expertise in MFRS, MPERS, and regulatory compliance</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Sustainable Growth</h4>
+                    <p className="text-muted-foreground text-sm">Helping businesses achieve long-term success and compliance</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
