@@ -104,7 +104,7 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary" asChild>
-                  <Link to="/contact">Get Free Consultation</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
             </div>
