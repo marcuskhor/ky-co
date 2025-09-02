@@ -246,26 +246,33 @@ const Index = () => {
                 About KY&CO
               </h2>
               <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
-                Established in 2008, KY&CO has grown to become one of Malaysia's most trusted 
-                audit and advisory firms. Our commitment to excellence and client success 
-                has earned us the trust of over 500 businesses across various industries.
+                Established since 2021, KY&CO is a licensed audit firm committed to providing reliable, 
+                ethical, and practical accounting services. Our team brings together a mix of audit 
+                experience, industry exposure, and a deep understanding of local compliance requirements.
               </p>
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">15+</div>
-                  <div className="text-muted-foreground text-sm">Years Experience</div>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Licensed & Certified</h4>
+                    <p className="text-muted-foreground text-sm">Approved company auditors with professional certifications and memberships</p>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">500+</div>
-                  <div className="text-muted-foreground text-sm">Clients Served</div>
+                
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Industry Expertise</h4>
+                    <p className="text-muted-foreground text-sm">Extensive experience across manufacturing, trading, construction, and property development</p>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">50+</div>
-                  <div className="text-muted-foreground text-sm">Team Members</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">98%</div>
-                  <div className="text-muted-foreground text-sm">Client Satisfaction</div>
+                
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Regulatory Compliance</h4>
+                    <p className="text-muted-foreground text-sm">Deep knowledge in MFRS, MPERS, and Malaysian regulatory requirements</p>
+                  </div>
                 </div>
               </div>
               <Button variant="default" size="lg" asChild>
