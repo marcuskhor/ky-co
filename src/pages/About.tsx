@@ -206,7 +206,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Work with Us?</h2>
           <p className="text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
             Discover how our expertise and commitment can help your business achieve its goals. 
-            Contact us today for a consultation.
+            Contact us today.
           </p>
           <div className="flex justify-center">
             <Button variant="outline" size="lg" className="bg-white text-primary hover:bg-white/90" asChild>
