@@ -191,12 +191,9 @@ const Contact = () => {
             Whether you need audit services, tax advisory, or business consulting, 
             our team is ready to help you achieve your goals.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button variant="default" size="lg">
-              Schedule Consultation
-            </Button>
-            <Button variant="outline" size="lg">
-              Download Brochure
+              Contact Us
             </Button>
           </div>
         </div>
