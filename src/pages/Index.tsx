@@ -21,26 +21,26 @@ const Index = () => {
   const services = [
     {
       icon: Shield,
-      title: "External Audit",
-      description: "Audit of companies in property development, construction, manufacturing, trading, and various service industries.",
+      title: "Statutory Audits",
+      description: "Independent statutory audits ensuring financial statements are prepared in accordance with applicable accounting and regulatory requirements for both individual companies and group audits.",
       link: "/services"
     },
     {
       icon: FileText,
-      title: "Group & Consolidated Audits",
-      description: "Group and consolidated financial statement audits with comprehensive reporting.",
-      link: "/services"
-    },
-    {
-      icon: Calculator,
-      title: "Compliance Audits",
-      description: "Compliance audits in accordance with MFRS, MPERS, and other applicable standards.",
+      title: "Non-Statutory Audits & Assurance Services",
+      description: "Tailored audit and assurance services designed to enhance credibility and strengthen stakeholder confidence where statutory audits are not required.",
       link: "/services"
     },
     {
       icon: Users,
       title: "Technical Consultations",
-      description: "Technical consultations on financial reporting and accounting treatments.",
+      description: "Expert technical consultations on financial reporting and accounting treatments to help navigate complex accounting issues.",
+      link: "/services"
+    },
+    {
+      icon: Calculator,
+      title: "Accounting Services",
+      description: "Comprehensive accounting services to support businesses in maintaining accurate and reliable financial records with compliance support.",
       link: "/services"
     }
   ];
