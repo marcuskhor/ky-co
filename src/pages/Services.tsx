@@ -19,13 +19,18 @@ const Services = () => {
     {
       icon: Shield,
       title: "Audit of Companies",
-      description: "Comprehensive audit services for companies across various industries including property development, construction, manufacturing, trading, and service sectors.",
+      description: "We provide audit and assurance services across a wide range of industries, such as:",
       features: [
-        "Property development companies",
-        "Construction companies", 
-        "Manufacturing sector businesses",
-        "Trading businesses",
-        "Service industry companies"
+        "Property Development & Construction",
+        "Manufacturing & Trading", 
+        "Retail & Consumer Goods",
+        "Hospitality & Tourism",
+        "Technology & E-Commerce",
+        "Professional Services",
+        "Transportation & Logistics",
+        "Healthcare & Wellness",
+        "Non-Profit Organizations & Associations",
+        "Investment Holding Companies"
       ]
     },
     {
