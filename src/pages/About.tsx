@@ -39,21 +39,21 @@ const About = () => {
 
   const teamMembers = [
     {
-      name: "Kang Yew",
-      title: "Managing Partner",
-      bio: "With over 15 years of experience in audit and assurance, Kang Yew leads our team with expertise in MFRS and industry-specific auditing.",
+      name: "Chua Khai Yee",
+      title: "Partner",
+      bio: "Chua Khai Yee is an approved company auditor and holds a Bachelor of Accounting (Hons.) from Multimedia University. He has more than 10 years of professional experience in audit and assurance, with exposure across a wide range of industries including manufacturing, trading, services, property development, construction, and others. In 2021, he founded KY & CO, where he plays a key role in defining the firm's vision and strategic direction.",
       image: "/placeholder.svg"
     },
     {
-      name: "Senior Manager",
-      title: "Audit Manager", 
-      bio: "Specializing in group consolidations and technical accounting matters, bringing deep regulatory knowledge to client engagements.",
+      name: "Emmy Liew Fong Lin",
+      title: "Director", 
+      bio: "Emmy is a member of the Association of Chartered Certified Accountants (ACCA) and holds a Bachelor of Commerce (Hons) degree from Tunku Abdul Rahman University College. She began her career with a mid-tier audit firm in Malaysia and has accumulated 9 years of experience in audit and assurance engagements. Her portfolio spans a wide range of industries, including property development, construction, trading, manufacturing, and group consolidations.",
       image: "/placeholder.svg"
     },
     {
-      name: "Team Lead",
-      title: "Senior Associate",
-      bio: "Expert in compliance auditing and financial reporting, with strong focus on SME client requirements.",
+      name: "Mohamed Yusof",
+      title: "Director",
+      bio: "Mohamed Yusof is a Chartered Accountant of the Malaysian Institute of Accountants (MIA) and holds a Bachelor of Accounting (Hons.) degree from Universiti Teknologi MARA (UiTM). He has over 10 years of professional experience in audit and assurance, serving a diverse portfolio of clients ranging from small and medium enterprises (SMEs) to public listed companies.",
       image: "/placeholder.svg"
     }
   ];
