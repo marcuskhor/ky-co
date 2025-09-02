@@ -49,19 +49,19 @@ const Index = () => {
     {
       name: "Sarah Johnson",
       company: "Tech Innovations Sdn Bhd",
-      content: "KY&CO has been instrumental in our company's growth. Their professional audit services and strategic advice have helped us maintain compliance while scaling our business.",
+      content: "KY & CO has been instrumental in our company's growth. Their professional audit services and strategic advice have helped us maintain compliance while scaling our business.",
       rating: 5
     },
     {
       name: "Michael Chen",
       company: "Global Manufacturing Ltd",
-      content: "The team at KY&CO demonstrates exceptional expertise and attention to detail. Their tax advisory services have saved us significant costs while ensuring full compliance.",
+      content: "The team at KY & CO demonstrates exceptional expertise and attention to detail. Their tax advisory services have saved us significant costs while ensuring full compliance.",
       rating: 5
     },
     {
       name: "Amanda Lee",
       company: "Retail Solutions Malaysia",
-      content: "Outstanding service and professionalism. KY&CO's business consulting has been crucial in our digital transformation journey. Highly recommended!",
+      content: "Outstanding service and professionalism. KY & CO's business consulting has been crucial in our digital transformation journey. Highly recommended!",
       rating: 5
     }
   ];
@@ -83,10 +83,10 @@ const Index = () => {
             <div className="text-white text-center lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
                 Welcome to 
-                <span className="text-accent block">KY&CO</span>
+                <span className="text-accent block">KY & CO</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
-                Established since 2021, KY&CO is a licensed audit firm committed to providing reliable, 
+                Established since 2021, KY & CO is a licensed audit firm committed to providing reliable,
                 ethical, and practical accounting services that help businesses meet regulatory requirements 
                 and achieve sustainable growth.
               </p>
@@ -110,7 +110,7 @@ const Index = () => {
             </div>
             <div className="hidden lg:block">
               <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg shadow-elegant">
-                <h3 className="text-2xl font-bold text-white mb-6">Why Choose KY&CO?</h3>
+                <h3 className="text-2xl font-bold text-white mb-6">Why Choose KY & CO?</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
@@ -243,10 +243,10 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                About KY&CO
+                About KY & CO
               </h2>
               <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
-                Established since 2021, KY&CO is a licensed audit firm committed to providing reliable, 
+                Established since 2021, KY & CO is a licensed audit firm committed to providing reliable, 
                 ethical, and practical accounting services. Our team brings together a mix of audit 
                 experience, industry exposure, and a deep understanding of local compliance requirements.
               </p>
@@ -363,7 +363,7 @@ const Index = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
-            Contact KY&CO today for a free consultation and discover how our professional 
+            Contact KY & CO today for a free consultation and discover how our professional 
             services can help your business achieve its goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

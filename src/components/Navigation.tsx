@@ -25,7 +25,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-2 min-w-0 flex-shrink-0 ">
             <img 
               src={ky_logo} 
-              alt="KY&CO" 
+              alt="KY & CO" 
               className="h-20 w-20 sm:h-16 sm:w-48 text-primary flex-shrink-0"
             />
           </Link>

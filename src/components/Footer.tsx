@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="bg-white p-2 rounded-lg">
                 <span className="text-primary font-bold text-lg">KY</span>
               </div>
-              <span className="text-2xl font-bold">KY&CO</span>
+              <span className="text-2xl font-bold">KY & CO</span>
             </div>
             <p className="text-primary-foreground/80 mb-6 max-w-md">
               A licensed audit firm committed to providing reliable, ethical, and practical 
@@ -133,7 +133,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 KY&CO. All rights reserved.
+            © 2024 KY & CO. All rights reserved.
           </p>
         </div>
       </div>

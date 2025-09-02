@@ -73,7 +73,7 @@ const About = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white leading-tight">
             About 
-            <span className="text-accent block">KY&CO</span>
+            <span className="text-accent block">KY & CO</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Our professionals are technically strong, approachable, and passionate about helping clients succeed.
@@ -96,7 +96,7 @@ const About = () => {
                 Our Story
               </h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Established since 2021, KY&CO is a licensed audit firm committed to providing reliable, 
+                Established since 2021, KY & CO is a licensed audit firm committed to providing reliable, 
                 ethical, and practical accounting services that help businesses meet regulatory requirements 
                 and achieve sustainable growth.
               </p>
@@ -148,7 +148,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Values</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do at KY&CO
+              The principles that guide everything we do at KY & CO
             </p>
           </div>
           
