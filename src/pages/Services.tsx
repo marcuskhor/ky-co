@@ -108,45 +108,49 @@ const Services = () => {
               </div>
             </div>
             
-            {/* Key Stats Overlay */}
+            {/* Service Excellence Highlight */}
             <div className="hidden lg:block">
               <div className="bg-white/15 backdrop-blur-md p-8 rounded-2xl shadow-elegant border border-white/20">
-                <h3 className="text-2xl font-bold text-white mb-8 text-center">Our Track Record</h3>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-accent mb-2">500+</div>
-                    <div className="text-white/90 text-sm">Audits Completed</div>
+                <h3 className="text-2xl font-bold text-white mb-8 text-center">Service Excellence</h3>
+                
+                {/* Key Service Pillars */}
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="bg-accent/20 p-2 rounded-lg flex-shrink-0">
+                      <Shield className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Comprehensive Coverage</h4>
+                      <p className="text-white/80 text-sm">Full spectrum audit services across all business sectors and sizes</p>
+                    </div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-accent mb-2">15+</div>
-                    <div className="text-white/90 text-sm">Years Experience</div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="bg-accent/20 p-2 rounded-lg flex-shrink-0">
+                      <Award className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Technical Expertise</h4>
+                      <p className="text-white/80 text-sm">Deep knowledge in MFRS, MPERS and regulatory compliance</p>
+                    </div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-accent mb-2">98%</div>
-                    <div className="text-white/90 text-sm">Success Rate</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-accent mb-2">24/7</div>
-                    <div className="text-white/90 text-sm">Support</div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <div className="bg-accent/20 p-2 rounded-lg flex-shrink-0">
+                      <Users className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Client-Focused Approach</h4>
+                      <p className="text-white/80 text-sm">Tailored solutions that address your unique business challenges</p>
+                    </div>
                   </div>
                 </div>
                 
-                {/* Trust Indicators */}
+                {/* Call to Action */}
                 <div className="mt-8 pt-6 border-t border-white/20">
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                      <span className="text-white/90 text-sm">Certified Public Accountants</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                      <span className="text-white/90 text-sm">ISO 9001:2015 Certified</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                      <span className="text-white/90 text-sm">Licensed by Bank Negara Malaysia</span>
-                    </div>
-                  </div>
+                  <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white">
+                    Schedule Your Consultation
+                  </Button>
                 </div>
               </div>
             </div>
