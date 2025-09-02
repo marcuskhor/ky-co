@@ -118,7 +118,9 @@ const Footer = () => {
         <div className="border-t border-primary-light mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-4 mb-4 md:mb-0">
             <a 
-              href="#" 
+              href="https://www.facebook.com/share/1AnbgfajdU/?mibextid=LQQJ4d" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary-foreground/80 hover:text-white transition-colors duration-300"
             >
               <Facebook className="h-5 w-5" />
