@@ -19,8 +19,8 @@ const Services = () => {
   const services = [
     {
       icon: Shield,
-      title: "Audit of Companies",
-      description: "We provide audit and assurance services across a wide range of industries, such as:",
+      title: "Statutory Audits",
+      description: "We provide independent statutory audits to ensure financial statements are prepared in accordance with applicable accounting and regulatory requirements. Our audits cover both individual companies and group audits, including consolidated financial statements, providing stakeholders with confidence, transparency, and reliability in financial reporting.",
       features: [
         "Property Development & Construction",
         "Manufacturing & Trading", 
@@ -36,46 +36,37 @@ const Services = () => {
     },
     {
       icon: FileText,
-      title: "Group & Consolidated Financial Statement Audits",
-      description: "Specialized audit services for group companies and consolidated financial statements to ensure compliance and accuracy.",
+      title: "Non-Statutory Audits & Assurance Services",
+      description: "In addition to statutory audits, we also provide non-statutory audit and assurance services tailored to meet specific business needs. These services are designed to enhance credibility, strengthen stakeholder confidence, and provide independent insights even where a statutory audit is not required.",
       features: [
-        "Multi-entity group audits",
-        "Consolidated reporting",
-        "Inter-company eliminations",
-        "Group accounting policies"
-      ]
-    },
-    {
-      icon: Calculator,
-      title: "Compliance Audits",
-      description: "Ensure your business meets all regulatory requirements with our compliance audit services in accordance with MFRS, MPERS, and other applicable standards.",
-      features: [
-        "MFRS compliance audits",
-        "MPERS standard audits",
-        "Regulatory compliance checks",
-        "Standards adherence verification"
+        "Review engagements",
+        "Agreed-upon procedures (AUP)",
+        "Special audits",
+        "Compliance audits",
+        "Audits for partnerships, clubs, associations, charitable bodies, and other non-statutory requirements"
       ]
     },
     {
       icon: Users,
       title: "Technical Consultations",
-      description: "Expert technical consultations on financial reporting and accounting treatments to help you navigate complex accounting issues.",
+      description: "We provide expert technical consultations on financial reporting and accounting treatments to help navigate complex accounting issues.",
       features: [
-        "Financial reporting guidance",
-        "Accounting treatment advice",
-        "Complex transaction structuring",
-        "Implementation support"
+        "Financial reporting support",
+        "Consultation on accounting treatments in accordance with applicable accounting standards",
+        "Consultation on new or amended accounting standards",
+        "Guidance on disclosure requirements in financial statements"
       ]
     },
     {
-      icon: TrendingUp,
-      title: "Advisory on Accounting Standards",
-      description: "Stay ahead with our advisory services on the latest developments in accounting standards and their impact on your business.",
+      icon: Calculator,
+      title: "Accounting Services",
+      description: "We provide comprehensive accounting services to support businesses in maintaining accurate and reliable financial records. Our services are designed to ease the compliance burden and allow management to focus on running the business.",
       features: [
-        "New standards implementation",
-        "Impact assessments",
-        "Transition planning",
-        "Ongoing compliance monitoring"
+        "Preparation of management accounts for timely decision-making",
+        "Preparation of financial statements in accordance with applicable accounting standards",
+        "Maintenance of general ledger and bookkeeping",
+        "Assistance with regulatory reporting requirements",
+        "Accounting support for year-end audit purposes"
       ]
     }
   ];
@@ -174,74 +165,36 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-            {/* First 3 services */}
-            <div className="col-span-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
-              {services.slice(0, 3).map((service, index) => (
-                <Card key={index} className="shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 w-full max-w-sm">
-                  <CardHeader>
-                    <div className="flex items-center space-x-3 mb-3">
-                      <div className="bg-gradient-primary p-3 rounded-lg">
-                        <service.icon className="h-6 w-6 text-primary-foreground" />
-                      </div>
-                      <CardTitle className="text-xl">{service.title}</CardTitle>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, index) => (
+              <Card key={index} className="shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
+                <CardHeader>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="bg-gradient-primary p-3 rounded-lg">
+                      <service.icon className="h-6 w-6 text-primary-foreground" />
                     </div>
-                    <CardDescription className="text-muted-foreground">
-                      {service.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center space-x-2">
-                          <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                          <span className="text-sm text-muted-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button variant="outline" className="w-full mt-6 group">
-                      Learn More
-                      <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            
-            {/* Last 2 services centered */}
-            <div className="col-span-full flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl">
-                {services.slice(3).map((service, index) => (
-                  <Card key={index + 3} className="shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 w-full max-w-sm">
-                    <CardHeader>
-                      <div className="flex items-center space-x-3 mb-3">
-                        <div className="bg-gradient-primary p-3 rounded-lg">
-                          <service.icon className="h-6 w-6 text-primary-foreground" />
-                        </div>
-                        <CardTitle className="text-xl">{service.title}</CardTitle>
-                      </div>
-                      <CardDescription className="text-muted-foreground">
-                        {service.description}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-center space-x-2">
-                            <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                            <span className="text-sm text-muted-foreground">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <Button variant="outline" className="w-full mt-6 group">
-                        Learn More
-                        <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
+                    <CardTitle className="text-xl">{service.title}</CardTitle>
+                  </div>
+                  <CardDescription className="text-muted-foreground">
+                    {service.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center space-x-2">
+                        <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                        <span className="text-sm text-muted-foreground">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button variant="outline" className="w-full mt-6 group">
+                    Learn More
+                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
