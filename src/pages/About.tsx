@@ -193,12 +193,9 @@ const About = () => {
             Discover how our expertise and commitment can help your business achieve its goals. 
             Contact us today for a consultation.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button variant="outline" size="lg" className="bg-white text-primary hover:bg-white/90" asChild>
-              <Link to="/contact">Schedule Meeting</Link>
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary" asChild>
-              <Link to="/services">Our Services</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
         </div>
