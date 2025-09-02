@@ -91,11 +91,17 @@ const Index = () => {
                 and achieve sustainable growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button variant="hero" size="lg" asChild>
-                  <Link to="/services">
-                    Our Services
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
+                <Button 
+                  variant="hero" 
+                  size="lg" 
+                  onClick={() => {
+                    document.getElementById('our-services')?.scrollIntoView({ 
+                      behavior: 'smooth' 
+                    });
+                  }}
+                >
+                  Our Services
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary" asChild>
                   <Link to="/contact">Get Free Consultation</Link>
@@ -180,7 +186,7 @@ const Index = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="py-20 bg-secondary">
+      <section id="our-services" className="py-20 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
