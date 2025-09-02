@@ -317,11 +317,8 @@ const Services = () => {
           <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
             Contact us today to discuss how our professional services can help your business achieve its goals.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button variant="outline" size="lg" className="bg-white text-primary hover:bg-white/90" asChild>
-              <Link to="/contact">Contact Us</Link>
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary" asChild>
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
