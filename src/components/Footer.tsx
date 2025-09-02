@@ -118,7 +118,7 @@ const Footer = () => {
         <div className="border-t border-primary-light mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-4 mb-4 md:mb-0">
             <a 
-              href="https://www.facebook.com/share/1AnbgfajdU/?mibextid=LQQJ4d" 
+              href="https://www.facebook.com/profile.php?id=61574067014869&mibextid=LQQJ4d&rdid=uP4J64RfQ9oY4bmN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AnbgfajdU%2F%3Fmibextid%3DLQQJ4d#" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/80 hover:text-white transition-colors duration-300"
