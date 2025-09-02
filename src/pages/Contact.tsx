@@ -188,8 +188,9 @@ const Contact = () => {
             Ready to Work With Us?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Whether you need audit services, tax advisory, or business consulting, 
-            our team is ready to help you achieve your goals.
+            We offer comprehensive professional services including Statutory Audits, 
+            Non-Statutory Audits & Assurance Services, Technical Consultations, and 
+            Accounting Services to help your business achieve its goals.
           </p>
           <div className="flex justify-center">
             <Button variant="default" size="lg">
