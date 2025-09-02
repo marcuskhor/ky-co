@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Linkedin, Facebook, Twitter } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, BookOpen } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -121,19 +121,13 @@ const Footer = () => {
               href="#" 
               className="text-primary-foreground/80 hover:text-white transition-colors duration-300"
             >
-              <Linkedin className="h-5 w-5" />
-            </a>
-            <a 
-              href="#" 
-              className="text-primary-foreground/80 hover:text-white transition-colors duration-300"
-            >
               <Facebook className="h-5 w-5" />
             </a>
             <a 
               href="#" 
               className="text-primary-foreground/80 hover:text-white transition-colors duration-300"
             >
-              <Twitter className="h-5 w-5" />
+              <BookOpen className="h-5 w-5" />
             </a>
           </div>
           <p className="text-primary-foreground/60 text-sm">
