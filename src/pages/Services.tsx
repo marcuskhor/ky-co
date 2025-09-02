@@ -21,11 +21,11 @@ const Services = () => {
       title: "Audit of Companies",
       description: "Comprehensive audit services for companies across various industries including property development, construction, manufacturing, trading, and service sectors.",
       features: [
-        "Property development audits",
-        "Construction company audits", 
-        "Manufacturing sector audits",
-        "Trading business audits",
-        "Service industry audits"
+        "Property development companies",
+        "Construction companies", 
+        "Manufacturing sector businesses",
+        "Trading businesses",
+        "Service industry companies"
       ]
     },
     {
