@@ -12,6 +12,7 @@ import {
   CheckCircle,
   ArrowRight 
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import auditingHero from "@/assets/auditing-hero.jpg";
 
 const Services = () => {
@@ -317,11 +318,11 @@ const Services = () => {
             Contact us today to discuss how our professional services can help your business achieve its goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" size="lg" className="bg-white text-primary hover:bg-white/90">
-              Schedule Consultation
+            <Button variant="outline" size="lg" className="bg-white text-primary hover:bg-white/90" asChild>
+              <Link to="/contact">Contact Us</Link>
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
-              Get Quote
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary" asChild>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
         </div>
