@@ -7,8 +7,56 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import contactHero from "@/assets/contact-hero.jpg";
-
+import { toast } from "@/components/ui/use-toast";
+import { supabase } from "@/integrations/supabase/client";
+import { useState } from "react";
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const payload = {
+      first_name: String(formData.get('first_name') || '').trim(),
+      last_name: String(formData.get('last_name') || '').trim(),
+      email: String(formData.get('email') || '').trim(),
+      phone: (String(formData.get('phone') || '').trim()) || null,
+      company: (String(formData.get('company') || '').trim()) || null,
+      service_interest: (String(formData.get('service_interest') || '').trim()) || null,
+      message: String(formData.get('message') || '').trim(),
+    };
+
+    if (!payload.first_name || !payload.last_name || !payload.email || !payload.message) {
+      toast({
+        title: "Missing information",
+        description: "Please fill in required fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    try {
+      setIsLoading(true);
+      const { error } = await supabase.from('contact_submissions').insert(payload);
+      if (error) throw error;
+      toast({
+        title: "Message sent",
+        description: "Thanks! We'll get back to you shortly.",
+      });
+      form.reset();
+    } catch (error) {
+      console.error(error);
+      toast({
+        title: "Submission failed",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -118,37 +166,38 @@ const Contact = () => {
               <h2 className="text-3xl font-bold text-foreground mb-8">Send us a Message</h2>
               <Card className="shadow-soft">
                 <CardContent className="p-6">
-                  <form className="space-y-6">
+                  <form className="space-y-6" onSubmit={handleSubmit} aria-busy={isLoading}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="firstName">First Name</Label>
-                        <Input id="firstName" placeholder="Your first name" />
+                        <Input id="firstName" name="first_name" placeholder="Your first name" required />
                       </div>
                       <div>
                         <Label htmlFor="lastName">Last Name</Label>
-                        <Input id="lastName" placeholder="Your last name" />
+                        <Input id="lastName" name="last_name" placeholder="Your last name" required />
                       </div>
                     </div>
                     
                     <div>
                       <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="your.email@example.com" />
+                      <Input id="email" name="email" type="email" placeholder="your.email@example.com" required />
                     </div>
                     
                     <div>
                       <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" placeholder="+60 12-345 6789" />
+                      <Input id="phone" name="phone" placeholder="+60 12-345 6789" />
                     </div>
                     
                     <div>
                       <Label htmlFor="company">Company</Label>
-                      <Input id="company" placeholder="Your company name" />
+                      <Input id="company" name="company" placeholder="Your company name" />
                     </div>
                     
                     <div>
                       <Label htmlFor="service">Service of Interest</Label>
-                      <select 
-                        id="service" 
+                      <select
+                        id="service"
+                        name="service_interest"
                         className="w-full p-2 border border-input rounded-md bg-background"
                       >
                         <option value="">Select a service</option>
@@ -165,13 +214,15 @@ const Contact = () => {
                       <Label htmlFor="message">Message</Label>
                       <Textarea 
                         id="message" 
+                        name="message"
                         placeholder="Tell us about your requirements..."
                         rows={5}
+                        required
                       />
                     </div>
                     
-                    <Button type="submit" className="w-full" size="lg">
-                      Send Message
+                    <Button type="submit" className="w-full" size="lg" disabled={isLoading}>
+                      {isLoading ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 </CardContent>
