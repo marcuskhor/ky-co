@@ -76,7 +76,7 @@ const Services = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-32 lg:py-48 overflow-hidden">
+      <section className="relative py-16 lg:py-24 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${auditingHero})` }}
@@ -94,13 +94,12 @@ const Services = () => {
                 Comprehensive audit and advisory services tailored to meet your business needs. 
                 We deliver excellence through expertise, integrity, and innovation.
               </p>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-                <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-                  Get Free Consultation
-                  <ArrowRight className="ml-2 h-6 w-6" />
-                </Button>
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4">
-                  Download Brochure
+              <div className="flex justify-center lg:justify-start">
+                <Button variant="hero" size="lg" className="text-lg px-8 py-4" asChild>
+                  <Link to="/contact">
+                    Contact Us
+                    <ArrowRight className="ml-2 h-6 w-6" />
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -145,8 +144,8 @@ const Services = () => {
                 
                 {/* Call to Action */}
                 <div className="mt-8 pt-6 border-t border-white/20">
-                  <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white">
-                    Schedule Your Consultation
+                  <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white" asChild>
+                    <Link to="/contact">Contact Us</Link>
                   </Button>
                 </div>
               </div>
