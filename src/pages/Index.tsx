@@ -366,14 +366,9 @@ const Index = () => {
             Contact KY & CO today for a free consultation and discover how our professional 
             services can help your business achieve its goals.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" size="lg" className="bg-white text-primary hover:bg-white/90">
-              Schedule Free Consultation
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
-              Get Quote
-            </Button>
-          </div>
+          <Button variant="outline" size="lg" className="bg-white text-primary hover:bg-white/90" asChild>
+            <Link to="/contact">Contact Us</Link>
+          </Button>
         </div>
       </section>
 
