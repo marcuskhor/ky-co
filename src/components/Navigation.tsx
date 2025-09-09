@@ -26,7 +26,7 @@ const Navigation = () => {
             <img 
               src={ky_logo} 
               alt="KY & CO" 
-              className="h-20 w-20 sm:h-16 sm:w-48 text-primary flex-shrink-0"
+              className="h-12 w-auto sm:h-14 md:h-16"
             />
           </Link>
 

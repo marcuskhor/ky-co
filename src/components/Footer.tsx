@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, BookOpen } from "lucide-react";
+import ky_logo from "@/assets/ky_co_logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Company Info */}
-          <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-white p-2 rounded-lg">
-                <span className="text-primary font-bold text-lg">KY</span>
-              </div>
-              <span className="text-2xl font-bold">KY & CO</span>
+          <div>
+            <div className="flex items-center mb-4">
+              <img 
+                src={ky_logo} 
+                alt="KY & CO" 
+                className="h-16 w-auto"
+              />
             </div>
             <p className="text-primary-foreground/80 mb-6 max-w-md">
               A licensed audit firm committed to providing reliable, ethical, and practical 
@@ -81,37 +83,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <span className="text-primary-foreground/80 text-sm">
-                  Company Audits
-                </span>
-              </li>
-              <li>
-                <span className="text-primary-foreground/80 text-sm">
-                  Group & Consolidated Audits
-                </span>
-              </li>
-              <li>
-                <span className="text-primary-foreground/80 text-sm">
-                  Compliance Audits (MFRS/MPERS)
-                </span>
-              </li>
-              <li>
-                <span className="text-primary-foreground/80 text-sm">
-                  Technical Consultations
-                </span>
-              </li>
-              <li>
-                <span className="text-primary-foreground/80 text-sm">
-                  Advisory Services
-                </span>
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Social Media & Copyright */}
