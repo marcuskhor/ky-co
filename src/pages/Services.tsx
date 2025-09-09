@@ -245,7 +245,7 @@ const Services = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Technical Capabilities</h3>
               <p className="text-muted-foreground">
-                Strong technical capabilities in MFRS, MPERS, and consolidation audits with deep expertise.
+                Strong technical capabilities in financial reporting and audit services.
               </p>
             </div>
 
