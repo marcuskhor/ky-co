@@ -275,6 +275,30 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+              
+              {/* Audit Focus Section */}
+              <div className="bg-white/50 border border-border/20 rounded-lg p-6 mb-8">
+                <h4 className="font-semibold text-foreground mb-4">Our Audit Focus</h4>
+                <p className="text-muted-foreground text-sm mb-4">In carrying out our audits, we focus on:</p>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-muted-foreground">Ensuring compliance with approved accounting standards (MFRS / MPERS)</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-muted-foreground">Reviewing compliance with statutory and regulatory obligations</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-muted-foreground">Assessing processes impacting financial reporting</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-muted-foreground">Conducting audits in accordance with the approved standards on auditing in Malaysia and the International Standards on Auditing (ISA)</span>
+                  </div>
+                </div>
+              </div>
               <Button variant="default" size="lg" asChild>
                 <Link to="/about">
                   Learn More About Us
