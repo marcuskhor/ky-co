@@ -38,8 +38,21 @@ const Contact = () => {
 
     try {
       setIsLoading(true);
+      
+      // Insert into database
       const { error } = await supabase.from('contact_submissions').insert(payload);
       if (error) throw error;
+      
+      // Send email notifications
+      const { error: emailError } = await supabase.functions.invoke('send-contact-notification', {
+        body: payload
+      });
+      
+      if (emailError) {
+        console.error('Email notification error:', emailError);
+        // Don't fail the whole process if email fails
+      }
+      
       toast({
         title: "Message sent",
         description: "Thanks! We'll get back to you shortly.",
@@ -201,11 +214,10 @@ const Contact = () => {
                         className="w-full p-2 border border-input rounded-md bg-background"
                       >
                         <option value="">Select a service</option>
-                        <option value="external-audit">External Audit</option>
-                        <option value="internal-audit">Internal Audit</option>
-                        <option value="tax-advisory">Tax Advisory</option>
-                        <option value="business-consulting">Business Consulting</option>
-                        <option value="risk-management">Risk Management</option>
+                        <option value="statutory-audits">Statutory Audits</option>
+                        <option value="non-statutory-audits">Non-Statutory Audits & Assurance Services</option>
+                        <option value="technical-consultations">Technical Consultations</option>
+                        <option value="accounting-services">Accounting Services</option>
                         <option value="other">Other</option>
                       </select>
                     </div>
