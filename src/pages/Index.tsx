@@ -11,8 +11,6 @@ import {
   Award,
   ArrowRight,
   CheckCircle,
-  Star,
-  Quote
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -45,26 +43,6 @@ const Index = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      company: "Tech Innovations Sdn Bhd",
-      content: "KY & CO has been instrumental in our company's growth. Their professional audit services and strategic advice have helped us maintain compliance while scaling our business.",
-      rating: 5
-    },
-    {
-      name: "Michael Chen",
-      company: "Global Manufacturing Ltd",
-      content: "The team at KY & CO demonstrates exceptional expertise and attention to detail. Their tax advisory services have saved us significant costs while ensuring full compliance.",
-      rating: 5
-    },
-    {
-      name: "Amanda Lee",
-      company: "Retail Solutions Malaysia",
-      content: "Outstanding service and professionalism. KY & CO's business consulting has been crucial in our digital transformation journey. Highly recommended!",
-      rating: 5
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -344,41 +322,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              What Our Clients Say
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Don't just take our word for it - hear from our satisfied clients
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="shadow-soft border-l-4 border-l-primary">
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-accent fill-current" />
-                    ))}
-                  </div>
-                  <Quote className="h-8 w-8 text-primary/20 mb-4" />
-                  <p className="text-muted-foreground mb-6 italic">
-                    "{testimonial.content}"
-                  </p>
-                  <div>
-                    <div className="font-semibold text-foreground">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">{testimonial.company}</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-primary text-primary-foreground">
