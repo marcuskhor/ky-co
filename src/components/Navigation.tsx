@@ -53,6 +53,10 @@ const Navigation = () => {
                 <span>012-731 2618</span>
               </div>
               <div className="flex items-center space-x-1">
+                <Phone className="h-4 w-4" />
+                <span>017-584 2654</span>
+              </div>
+              <div className="flex items-center space-x-1">
                 <Mail className="h-4 w-4" />
                 <span>ad.kyco@hotmail.com</span>
               </div>
@@ -102,6 +106,10 @@ const Navigation = () => {
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4" />
                     <span>012-731 2618</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Phone className="h-4 w-4" />
+                    <span>017-584 2654</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Mail className="h-4 w-4" />
