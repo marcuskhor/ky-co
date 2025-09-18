@@ -62,8 +62,8 @@ const Navigation = () => {
               </div>
             </div>
 
-            <Button variant="default" size="sm">
-              Get Quote
+            <Button variant="default" size="sm" asChild>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
 
@@ -116,8 +116,8 @@ const Navigation = () => {
                     <span>ad.kyco@hotmail.com</span>
                   </div>
                 </div>
-                <Button variant="default" size="sm" className="w-full mt-3">
-                  Get Quote
+                <Button variant="default" size="sm" className="w-full mt-3" asChild>
+                  <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                 </Button>
               </div>
             </div>
