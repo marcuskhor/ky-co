@@ -10,7 +10,15 @@ import contactHero from "@/assets/contact-hero.jpg";
 import { toast } from "@/components/ui/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { useState } from "react";
+import { useSEO } from "@/hooks/useSEO";
 const Contact = () => {
+  useSEO({
+    title: "Contact KY & CO - KYCO Audit Firm Malaysia | Get Free Consultation",
+    description: "Contact KY & CO (KYCO) for professional audit services. Offices in Klang and KL. Email: ad.kyco@hotmail.com. Call: 012-731 2618. Get your free consultation today.",
+    keywords: "contact KY & CO, KYCO contact, audit firm Klang, audit firm Kuala Lumpur, KY and Co email, KYCO phone number, audit consultation Malaysia",
+    canonicalUrl: "https://kyco.my/#/contact"
+  });
+
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

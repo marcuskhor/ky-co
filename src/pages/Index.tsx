@@ -14,8 +14,16 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
+import { useSEO } from "@/hooks/useSEO";
 
 const Index = () => {
+  useSEO({
+    title: "KY & CO - Licensed Audit Firm Malaysia | KYCO Audit & Advisory Services",
+    description: "KY & CO (KYCO) is a licensed audit firm in Malaysia offering statutory audits, non-statutory audits, technical consultations, and accounting services. Serving SMEs since 2021.",
+    keywords: "audit firm Malaysia, KY & CO, KYCO, KY and Co, licensed auditor Malaysia, statutory audit, accounting services Malaysia, MFRS audit, MPERS audit, external audit Malaysia, company auditor, audit firm Klang, audit firm KL",
+    canonicalUrl: "https://kyco.my/"
+  });
+
   const services = [
     {
       icon: Shield,

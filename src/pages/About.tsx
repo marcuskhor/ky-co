@@ -12,8 +12,16 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import teamMeeting from "@/assets/team-meeting.jpg";
+import { useSEO } from "@/hooks/useSEO";
 
 const About = () => {
+  useSEO({
+    title: "About KY & CO - Licensed Audit Firm Team | KYCO Malaysia",
+    description: "Meet the KY & CO (KYCO) team. Licensed audit firm established in 2021 with expertise in MFRS, MPERS, and regulatory compliance. Serving businesses across Malaysia.",
+    keywords: "KY & CO team, KYCO auditors, licensed auditor Malaysia, approved company auditor, audit firm Malaysia, Chua Khai Yee, KY and Co about",
+    canonicalUrl: "https://kyco.my/#/about"
+  });
+
   const values = [
     {
       icon: Shield,

@@ -14,8 +14,16 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import auditingHero from "@/assets/auditing-hero.jpg";
+import { useSEO } from "@/hooks/useSEO";
 
 const Services = () => {
+  useSEO({
+    title: "Audit Services Malaysia - KYCO Professional Audit & Assurance | KY & CO",
+    description: "Comprehensive audit services in Malaysia by KYCO. Statutory audits, non-statutory audits, technical consultations, and accounting services for SMEs. MFRS & MPERS compliant.",
+    keywords: "audit services Malaysia, KYCO audit, statutory audit Malaysia, non-statutory audit, assurance services, MFRS audit, MPERS compliance, company auditor Malaysia, KY and Co services",
+    canonicalUrl: "https://kyco.my/#/services"
+  });
+
   const services = [
     {
       icon: Shield,
