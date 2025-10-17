@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://kyco.my/sitemap.xml
+Sitemap: https://kyco.com.my/sitemap.xml
