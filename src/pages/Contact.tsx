@@ -127,7 +127,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 hover:text-primary transition-colors"
                       >
-                        <MessageCircle className="h-4 w-4 text-[#25D366]" />
+                        <MessageCircle className="h-4 w-4 text-primary" />
                         <span className="text-sm">WhatsApp: 012-731 2618</span>
                       </a>
                       <div className="flex items-center space-x-2">
@@ -161,7 +161,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 hover:text-primary transition-colors"
                       >
-                        <MessageCircle className="h-4 w-4 text-[#25D366]" />
+                        <MessageCircle className="h-4 w-4 text-primary" />
                         <span className="text-sm">WhatsApp: 012-731 2618</span>
                       </a>
                       <div className="flex items-center space-x-2">
