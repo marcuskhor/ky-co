@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import contactHero from "@/assets/contact-hero.jpg";
 import { toast } from "@/components/ui/use-toast";
 import { supabase } from "@/integrations/supabase/client";
@@ -121,10 +121,15 @@ const Contact = () => {
                       No.25-2, Lorong Gopeng, 41400, Klang, Selangor
                     </p>
                     <div className="space-y-2">
-                      <div className="flex items-center space-x-2">
-                        <Phone className="h-4 w-4 text-primary" />
-                        <span className="text-sm">012-731 2618</span>
-                      </div>
+                      <a 
+                        href="https://wa.me/60127312618" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 hover:text-primary transition-colors"
+                      >
+                        <MessageCircle className="h-4 w-4 text-[#25D366]" />
+                        <span className="text-sm">WhatsApp: 012-731 2618</span>
+                      </a>
                       <div className="flex items-center space-x-2">
                         <Phone className="h-4 w-4 text-primary" />
                         <span className="text-sm">017-584 2654</span>
@@ -150,10 +155,15 @@ const Contact = () => {
                       Suite 28.02, Level 28, Menara Southpoint, Mid Valley City
                     </p>
                     <div className="space-y-2">
-                      <div className="flex items-center space-x-2">
-                        <Phone className="h-4 w-4 text-primary" />
-                        <span className="text-sm">012-731 2618</span>
-                      </div>
+                      <a 
+                        href="https://wa.me/60127312618" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 hover:text-primary transition-colors"
+                      >
+                        <MessageCircle className="h-4 w-4 text-[#25D366]" />
+                        <span className="text-sm">WhatsApp: 012-731 2618</span>
+                      </a>
                       <div className="flex items-center space-x-2">
                         <Phone className="h-4 w-4 text-primary" />
                         <span className="text-sm">017-584 2654</span>

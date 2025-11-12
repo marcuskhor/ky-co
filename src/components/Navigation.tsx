@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail, MessageCircle } from "lucide-react";
 import ky_logo from "@/assets/ky_co_logo.png";
 
 const Navigation = () => {
@@ -48,10 +48,15 @@ const Navigation = () => {
             
             {/* Contact Info */}
             <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-              <div className="flex items-center space-x-1">
-                <Phone className="h-4 w-4" />
-                <span>012-731 2618</span>
-              </div>
+              <a 
+                href="https://wa.me/60127312618" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-1 hover:text-primary transition-colors"
+              >
+                <MessageCircle className="h-4 w-4 text-[#25D366]" />
+                <span>WhatsApp</span>
+              </a>
               <div className="flex items-center space-x-1">
                 <Phone className="h-4 w-4" />
                 <span>017-584 2654</span>
@@ -103,10 +108,15 @@ const Navigation = () => {
               ))}
               <div className="px-3 py-2 border-t border-border mt-2">
                 <div className="flex flex-col space-y-2 text-sm text-muted-foreground">
-                  <div className="flex items-center space-x-2">
-                    <Phone className="h-4 w-4" />
-                    <span>012-731 2618</span>
-                  </div>
+                  <a 
+                    href="https://wa.me/60127312618" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 hover:text-primary transition-colors"
+                  >
+                    <MessageCircle className="h-4 w-4 text-[#25D366]" />
+                    <span>WhatsApp: 012-731 2618</span>
+                  </a>
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4" />
                     <span>017-584 2654</span>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Facebook, BookOpen } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, BookOpen, MessageCircle } from "lucide-react";
 import ky_logo from "@/assets/ky_co_logo.png";
 
 const Footer = () => {
@@ -33,10 +33,15 @@ const Footer = () => {
                   KL: Suite 28.02, Level 28, Menara Southpoint, Mid Valley City
                 </span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span className="text-sm">012-731 2618</span>
-              </div>
+              <a 
+                href="https://wa.me/60127312618" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:text-white transition-colors"
+              >
+                <MessageCircle className="h-4 w-4 text-[#25D366]" />
+                <span className="text-sm">WhatsApp: 012-731 2618</span>
+              </a>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
                 <span className="text-sm">017-584 2654</span>
