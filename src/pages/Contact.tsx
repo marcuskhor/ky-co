@@ -130,14 +130,20 @@ const Contact = () => {
                         <MessageCircle className="h-4 w-4 text-primary" />
                         <span className="text-sm">WhatsApp: 012-731 2618</span>
                       </a>
-                      <div className="flex items-center space-x-2">
+                      <a 
+                        href="tel:+60175842654" 
+                        className="flex items-center space-x-2 hover:text-primary transition-colors"
+                      >
                         <Phone className="h-4 w-4 text-primary" />
                         <span className="text-sm">017-584 2654</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
+                      </a>
+                      <a 
+                        href="mailto:ad.kyco@hotmail.com" 
+                        className="flex items-center space-x-2 hover:text-primary transition-colors"
+                      >
                         <Mail className="h-4 w-4 text-primary" />
                         <span className="text-sm">ad.kyco@hotmail.com</span>
-                      </div>
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
@@ -164,14 +170,20 @@ const Contact = () => {
                         <MessageCircle className="h-4 w-4 text-primary" />
                         <span className="text-sm">WhatsApp: 012-731 2618</span>
                       </a>
-                      <div className="flex items-center space-x-2">
+                      <a 
+                        href="tel:+60175842654" 
+                        className="flex items-center space-x-2 hover:text-primary transition-colors"
+                      >
                         <Phone className="h-4 w-4 text-primary" />
                         <span className="text-sm">017-584 2654</span>
-                      </div>
-                      <div className="flex items-center space-x-2">
+                      </a>
+                      <a 
+                        href="mailto:ad.kyco@hotmail.com" 
+                        className="flex items-center space-x-2 hover:text-primary transition-colors"
+                      >
                         <Mail className="h-4 w-4 text-primary" />
                         <span className="text-sm">ad.kyco@hotmail.com</span>
-                      </div>
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
